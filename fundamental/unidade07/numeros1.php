@@ -13,19 +13,27 @@
     <body>
         <?php 
             // Multiplicacao e Divisao
+            echo $salario * $meses . "</br>";
+            echo $salario / 2 . "</br>";
+            echo $salario - 1000 . "</br>";
+            echo $salario ** 2 . "</br>";
+
 
             // Exponencial
-            echo "Raiz quadrada: " . pow(6,3) . "</br>";
+            echo "Exponencial: " . pow(6,3) . "</br>";
+            //echo "Raiz quadrada: " . pow(6,3) . "</br>";
 
             // Raiz Quadrada
+            echo "Raiz quadrada: " . sqrt(36) .  "</br>";
 
             // Randômico Generica
-            echo "Randomico: " . rand(1,5) . "</br>";
+            echo "Randomico: " . rand() . "</br>";
 
             // Randômico entre um intervalo
-            echo "Randomico no intervalo " . rand() . "</br>";
+            echo "Randomico no intervalo " . rand(5,10) . "</br>";
             
             // Valor absoluto
+            echo "Numero absoluto " . abs(-500);
             
         ?>
     </body>
