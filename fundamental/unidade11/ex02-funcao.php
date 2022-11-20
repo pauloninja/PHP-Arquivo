@@ -6,11 +6,14 @@
 </head>
 <body>
     <?php 
-        function retornarDiaria() {
-            return number_format( 1900/30, 2);
+        function retornarDiaria($_salario, $_dias ) {
+
+            return number_format( $_salario/$_dias , 2);// casas decimais
         }
 
-        echo retornarDiaria();
+        echo retornarDiaria(2500, 15) . "<br>";
+        echo retornarDiaria(5000, 15) . "<br>";
+        
     ?>
 </body>
 </html>
