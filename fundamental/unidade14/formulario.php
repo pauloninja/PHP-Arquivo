@@ -7,12 +7,12 @@
     </head>
 
     <body>
-        <form action="destino.php" method="get">
+        <form action="destino.php" method="post">
             <label for="nome">Nome Completo</label>
-            <input type="text" name="nome" id="nome">
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
             
             <label for="email">Email</label>
-            <input type="text" name="email" id="email">
+            <input type="text" name="email" id="email" placeholder="Digite seu e-mail">
             
             <input type="submit" value="Enviar Cadastro">
         </form>
