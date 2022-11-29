@@ -1,5 +1,10 @@
 <?php 
-  require_once("../../conexao.php/conexao.php");
+    // paso 1
+    $servidor = "localhost";
+    $usuario = "root";
+    $senha = "";
+    $banco = "andes";
+    $conecta = mysqli_connect($servidor,$usuario,$senha,$banco);
 
     // passo 2
     if(mysqli_connect_errno()){
@@ -26,7 +31,7 @@
     </head>
 
     <body>
-    <ul>
+        <ul>
       <?php
         while ( $registro = mysqli_fetch_assoc($produtos)){//assoc, row ou array  
         ?>
@@ -35,6 +40,10 @@
         }  
         ?>
         </ul>
+        <!--Fechamento de produtos para não-->
+        <?php 
+            mysqli_free_result($produtos);
+        ?>
         
     </body>
 </html>
