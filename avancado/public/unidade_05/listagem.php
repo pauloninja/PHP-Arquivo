@@ -22,15 +22,25 @@
         <!-- estilo -->
         <link href="_css/estilo.css" rel="stylesheet">
         <link href="_css/produtos.css" rel="stylesheet">
+        <link href="_css/produto_pesquisa.css" rel="stylesheet">
+
     </head>
 
     <body>
         <?php include_once("../_incluir/topo.php"); ?>
         <?php include_once("../_incluir/funcoes.php"); ?>  
+
               
         <main>  
+
+        <div id="janela_pesquisa">
+
+        </div>
             
            <div id="listagem_produtos"> 
+                <form action="listagem.php" method="get">
+                    <input type="text" name="produto" id="" placeholder="Nome do Produto">
+                </form>
             <?php
                 while($linha = mysqli_fetch_assoc($resultado)) {
             ?>

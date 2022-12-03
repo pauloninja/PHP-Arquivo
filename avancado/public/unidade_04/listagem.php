@@ -9,6 +9,10 @@
         
         <!-- estilo -->
         <link href="_css/estilo.css" rel="stylesheet">
+        <link  href="_css/produtos.css" rel="stylesheet">
+        <link  href="_css/produtos_pesquisa.css" rel="stylesheet">
+
+        
     </head>
 
     <body>
