@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularion</title>
+    <title>Contato-Mysql e Php</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
     <div class="box">
         <form action="formulario.php" method="POST">
             <fieldset>
-                <legend><b>Fórmulario de Clientes</b></legend>
+                <legend><b>Fórmulario de Contato</b></legend>
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
@@ -64,18 +64,6 @@ if (isset($_POST['submit'])) {
                     <label for="telefone" class="labelInput">Telefone:</label>
                 </div>
                 <br>
-                <p>Sexo:</p>
-                <input type="radio" id="feminino" name="genero" value="feminino" required>
-                <label for="feminino">Feminino</label>
-                <br>
-                <input type="radio" id="masculino" name="genero" value="masculino" required>
-                <label for="masculino">Masculino</label>
-                <br>
-                <input type="radio" id="outro" name="genero" value="outro" required>
-                <label for="outro">Outro</label>
-                <br>
-                <br>
-
                 <label for="date_nasc"><b>Data de Nascimento:</b></label>
                 <input type="date" name="date_nasc" id="date_nasc" required>
                 <br>
@@ -84,7 +72,7 @@ if (isset($_POST['submit'])) {
                     <input type="text" name="cidade" id="cidade" class="inputUser" required>
                     <label for="cidade" class="labelInput">Cidade:</label>
                 </div>
-                <br><br><br>
+                <br>
                 <div class="inputBox">
                     <input type="text" name="estado" id="estado" class="inputUser" required>
                     <label for="estado" class="labelInput">Estado:</label>

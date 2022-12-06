@@ -1,8 +1,9 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, rgb(20, 147,220), rgb(17,54,71));
+    background-image: linear-gradient(to right, rgb(10, 21, 28), rgb(57, 71, 17));
 }
 .box{
+    background-color: rgb(96, 42, 15);
     color: white;
     position: absolute;
     top: 50%;
@@ -60,7 +61,7 @@ legend{
 }
 
 #submit{
-    background-image: linear-gradient(to right, rgb(20, 147,220), rgb(17,54,71));
+    background-image: linear-gradient(to right, rgb(20, 220, 70), rgb(17, 71, 47));
     width: 100%;
     border: none;
     padding: 15px;
@@ -71,6 +72,6 @@ legend{
 }
 
 #submit:hover{
-    background-image: linear-gradient(to right, rgb(20, 80,172), rgb(80,19,195));
+    background-image: linear-gradient(to right, rgb(83, 39, 51), rgb(19, 195, 66));
 
 }
