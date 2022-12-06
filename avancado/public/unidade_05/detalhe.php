@@ -1,4 +1,14 @@
-<?php require_once("../../conexao/conexao.php"); ?>
+<?php require_once("../../conexao.php/conexao.php"); ?>
+<?php 
+    if(isset($_GET["codigo"])){
+        $produtoID = $_GET["codigo"];
+    }else{
+        Header("Location: listagem.php");
+    }
+
+    //Consulta
+
+?>
 
 <!doctype html>
 <html>

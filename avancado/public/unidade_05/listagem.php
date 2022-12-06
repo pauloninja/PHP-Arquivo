@@ -1,4 +1,4 @@
-<?php require_once("../../conexao/conexao.php"); ?>
+<?php require_once("../../conexao.php/conexao.php"); ?>
 
 <?php
     // Determinar localidade BR
@@ -22,8 +22,8 @@
         <!-- estilo -->
         <link href="_css/estilo.css" rel="stylesheet">
         <link href="_css/produtos.css" rel="stylesheet">
-        <link href="_css/produto_pesquisa.css" rel="stylesheet">
-
+       <link href="_css/produto_pesquisa.css" rel="stylesheet">
+ 
     </head>
 
     <body>
@@ -33,9 +33,9 @@
               
         <main>  
 
-        <div id="janela_pesquisa">
+         <div id="janela_pesquisa">
 
-        </div>
+        </div> 
             
            <div id="listagem_produtos"> 
                 <form action="listagem.php" method="get">
@@ -45,7 +45,11 @@
                 while($linha = mysqli_fetch_assoc($resultado)) {
             ?>
                 <ul>
-                    <li class="imagem"><img src="<?php echo  $linha["imagempequena"] ?>"></li>
+                    <li class="imagem">
+                        <a href="detalhe.php?codigo=<?php echo $linha["produtoID"] ?>">
+                        <img src="<?php echo  $linha["imagempequena"] ?>">
+                        </a>
+                    </li>
                     <li><h3><?php echo $linha["nomeproduto"] ?></h3></li>
                     <li>Tempo de Entrega : <?php echo $linha["tempoentrega"] ?></li>
                     <li>Preço unitário : <?php echo real_format($linha["precounitario"]) ?></li>
