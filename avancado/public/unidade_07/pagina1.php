@@ -1,4 +1,15 @@
-<?php require_once("../../conexao/conexao.php"); ?>
+<?php require_once("../../conexao.php/conexao.php"); ?>
+
+<?php 
+    //criar inicializacao de variavel de sessao
+    session_start();//para usar variavel se sessao
+
+    //definir valor da variavel
+    $_SESSION["usuario"] = "Naruto";
+
+?>
+
+
 <!doctype html>
 <html>
     <head>
@@ -14,6 +25,16 @@
         <?php include_once("../_incluir/funcoes.php"); ?>
         
         <main>
+            <?php
+
+            echo $_SESSION["usuario"];
+
+            ?>
+
+            <p>
+                <a href="pagina2.php">Pagina 2</a>
+
+            </p>
 
         </main>
 

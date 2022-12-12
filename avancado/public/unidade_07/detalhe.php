@@ -1,4 +1,16 @@
-<?php require_once("../../conexao/conexao.php"); ?>
+<?php require_once("../../conexao.php/conexao.php"); ?>
+
+<?php
+     // inicializar variavel de sessao
+     session_start();
+
+     //proteção da pagina de login se dentar acessar vai manda para pagina de login
+     if(!isset($_SESSION["user_portal"])){
+         header("location:login.php");
+     }
+
+?>
+
 <?php
     if ( isset($_GET["codigo"]) ) {
         $produto_id = $_GET["codigo"];

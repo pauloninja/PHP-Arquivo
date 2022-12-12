@@ -1,6 +1,16 @@
-<?php require_once("../../conexao/conexao.php"); ?>
+<?php require_once("../../conexao.php/conexao.php"); ?>
 
 <?php
+    // inicializar variavel de sessao
+    session_start();
+
+    //proteção da pagina de login se dentar acessar vai manda para pagina de login
+    if(!isset($_SESSION["user_portal"])){
+        header("location:login.php");
+    }
+
+
+
     // Determinar localidade BR
     setlocale(LC_ALL, 'pt_BR');
 
@@ -42,6 +52,7 @@
             
             <div id="listagem_produtos"> 
             <?php
+            //echo $_SESSION["user_portal"]; numero do usuario
                 while($linha = mysqli_fetch_assoc($resultado)) {
             ?>
                 <ul>

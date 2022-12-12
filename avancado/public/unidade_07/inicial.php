@@ -1,4 +1,4 @@
-<?php require_once("../../conexao/conexao.php"); ?>
+<?php require_once("../../conexao.php/conexao.php"); ?>
 
 <!doctype html>
 <html>
